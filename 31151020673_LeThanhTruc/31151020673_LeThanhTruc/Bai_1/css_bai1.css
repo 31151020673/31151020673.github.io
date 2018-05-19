@@ -1,0 +1,16 @@
+﻿
+#root {
+    width: 320px;
+    
+    background-color: antiquewhite;
+    margin: inherit;
+}
+    #root img {
+        width: 80px;
+    }
+    #root td {
+        width: 50%;
+        border: dotted;
+        border-radius: 10px;
+    }
+   

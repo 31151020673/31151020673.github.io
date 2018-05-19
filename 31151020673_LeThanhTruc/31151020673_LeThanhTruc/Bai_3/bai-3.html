@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css"
+      href="css_bai3.css" />
+</head>
+
+<body>
+    <script type="text/javascript" src="../Bai_3/js_Bai3.js"></script>
+    <div id="root">
+        <table>
+            <tr>
+                <td><img src="logo.png"/></td>
+                <td>
+                    <p>MSSV: 31151020673</p>
+                    <p>Họ tên: Lê Thanh Trúc</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h2 class="checkout-title">Chức năng đặt hàng</h2>
+    <div class="checkout-receiver-address__form" style="display: block;">
+        <div class="row">
+            <div class="col-tong">
+                <div class="form-horizontal">
+                    <div class="form-group ">
+                        <div class="row">
+                            <label for="" class="col-sm-3">Họ và tên:</label>
+                            <div class="col-sm-9">
+                                <input id="fullName" name="fullName" class="form-control js-script-check" placeholder="Ví dụ: Nguyễn Văn A" type="text" value="" maxlength="50">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="row">
+                            <label for="" class="col-sm-3">Điện thoại:</label>
+                            <div class="col-sm-9">
+                                <input id="phone" name="phone" class="form-control" placeholder="Ví dụ: 01234567890" type="text" value=""> <label for="" class="col-next">Nhân viên giao nhận sẽ liên hệ SDT này</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="row">
+
+                            <label for="" class="col-sm-3">Email:<span>(Không bắt buộc)</span></label>
+                            <div class="col-sm-9">
+                                <input id="fullName" name="fullName" class="form-control js-script-check" placeholder="Ví dụ: support@abc.vn" type="text" value="" maxlength="255">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group" style="padding-top: 20px;">
+                        <div class="row">
+                            <label for="" class="col-sm-3">Tỉnh/Thành phố:</label>
+                            <div class="col-sm-9">
+                                <select name="province">
+                                    <option value="0" selected="">Hồ Chí Minh</option>
+                                    <option value="1">Hà Nội</option>
+                                    <option value="2">Khác</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="row">
+                            <label for="" class="col-sm-3">Tên đường phố:</label>
+                            <div class="col-sm-9">
+                                <input id="detailedAddress" name="detailedAddress" class="form-control" placeholder="Ví dụ:Đường Nguyễn Đình Chiểu, quận 3" type="text" value="" maxlength="255">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="row">
+                            <label for="" class="col-sm-3">Địa chỉ chi tiết:</label>
+                            <div class="col-sm-9">
+                                <input id="detailedAddress" name="detailedAddress" class="form-control" placeholder="Ví dụ: số 59C" type="text" value="" maxlength="255">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="checkout-note">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <label for="">
+                        Lời nhắn:<span>(Không bắt buộc)</span>
+                    </label>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <textarea id="shippingAddressNote" name="shippingAddressNote" class="form-control" maxlength="500" placeholder="Ví dụ: Chuyển hàng ngoài giờ hành chính"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="js-giftcode-redemption" class="checkout-block">
+        <div class="checkout-block__header">
+            <h2 class="checkout-title">
+                Sử dụng mã giảm giá
+            </h2>
+
+
+        </div>
+        <div class="giftcode-submit-form">
+            <div class="checkout-block__body" style="display: block;">
+                <div class="checkout-payment__using-giftcode">
+
+
+                    <input name="input" type="text" class="form-control js-giftcode-input" placeholder="Nhập mã giảm giá">
+                    <button type="button" class="but" onclick="giamgia()">Áp dụng</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
